@@ -102,4 +102,17 @@ func switchNumbers(array: [Int]) -> [Int] {
 let result6 = switchNumbers(array: arrayNum2)
 print(result6)
 
+// 7.Задание: Форматирование строки
+
+func formattingString( str: String) -> String {
+    var res2 = [String]()
+    
+    for i in str.split(separator: " ") {
+        res2.append(String(i.capitalized))
+    }
+    return res2.joined(separator: " ")
+}
+let result7 = formattingString(str: "как же я устал")
+print(result7)
+
 
