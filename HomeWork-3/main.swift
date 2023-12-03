@@ -57,5 +57,12 @@ func sumArrayNum(array arr: [Int]) -> Int {
 let result3 = sumArrayNum(array: arrayNum)
 print(result3)
 
+// 4. Задание: Конвертация температуры
+
+func convertTemp(celsius: Double) -> Double {
+    (celsius*9.0/5.0) + 32
+}
+let result4 = convertTemp(celsius: 27.0)
+print(result4)
 
 
