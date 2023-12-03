@@ -30,5 +30,17 @@ return arrayNumbers
 let result = filterNumbers(array: arrayNumbers)
 print (result)
 
+// 2.Задание: Проверка на палиндром
+
+func stringFunc(String str: String) -> Bool {
+    if str == String(str.reversed()) {
+        return true
+    } else {
+        return false
+        }
+    }
+let result2 = stringFunc(String: "кабак")
+print (result2)
+
 
 
