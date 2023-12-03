@@ -66,3 +66,23 @@ let result4 = convertTemp(celsius: 27.0)
 print(result4)
 
 
+// 5.Задание: Записная книжка
+
+let NoteBook = [
+"Artyom, 89174827487, artyom@gmail.com",
+"Shamil, 89176584344, shamil@yandex.ru",
+"Islam, 89199874601, islam@mail.ru"
+]
+
+func searchName(name: String, in arr: [String]) -> String {
+    for (index, value) in arr.enumerated() {
+        if value.hasPrefix(name) {
+            return arr[index]
+        }
+    }
+    return " "
+}
+
+let result5 = searchName(name: "Shamil", in: NoteBook)
+print(result5)
+
