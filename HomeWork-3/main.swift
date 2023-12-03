@@ -86,3 +86,20 @@ func searchName(name: String, in arr: [String]) -> String {
 let result5 = searchName(name: "Shamil", in: NoteBook)
 print(result5)
 
+// 6.Задание: Перестановка элементов массива
+
+let arrayNum2 = [1,0,0,0,2]
+
+func switchNumbers(array: [Int]) -> [Int] {
+    var res = arrayNum2
+    let temp2 = res.last
+    guard let temp2 else { return [ ]}
+    res[res.count - 1] = res[0]
+    res[0] = temp2
+    return res
+}
+
+let result6 = switchNumbers(array: arrayNum2)
+print(result6)
+
+
