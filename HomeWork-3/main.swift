@@ -42,5 +42,20 @@ func stringFunc(String str: String) -> Bool {
 let result2 = stringFunc(String: "кабак")
 print (result2)
 
+// 3.Задание: Сумма элементов массива
+
+let arrayNum = [1,2,3,4,5]
+
+func sumArrayNum(array arr: [Int]) -> Int {
+    var sum = 0
+    for i in arr {
+        sum += i
+    }
+    return sum
+}
+
+let result3 = sumArrayNum(array: arrayNum)
+print(result3)
+
 
 
