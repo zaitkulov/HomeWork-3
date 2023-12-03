@@ -116,3 +116,28 @@ let result7 = formattingString(str: "как же я устал")
 print(result7)
 
 
+// 8.Задание: Конвертация дня недели
+
+func convertDayOfWeek(day: String) -> Int {
+    switch day {
+    case "Понедельник":
+        return 1
+    case "Вторник":
+        return 2
+    case "Среда":
+        return 3
+    case "Четверг":
+        return 4
+    case "Пятница":
+        return 5
+    case "Суббота":
+        return 6
+    case "Воскресенье":
+        return 7
+    default: return 0
+    }
+}
+let result8 = convertDayOfWeek(day: "Среда")
+print(result8)
+
+
