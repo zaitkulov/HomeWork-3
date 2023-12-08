@@ -229,3 +229,14 @@ func shortString(string str: String, number num: Int) -> String {
 let result15 = shortString(string: "Нумерация", number: 5)
 print (result15)
 
+//16.Задание: Объединение двух массивов без дубликатов
+
+func sumArrayWithoutDublicates(array1: [Int], array2: [Int]) -> [Int] {
+    Array(Set(array1 + array2)).sorted()
+}
+let arr1 = [1,2,2,3,4,5]
+let arr2 = [4,6,9,1,2,3]
+
+let result16 = sumArrayWithoutDublicates(array1: arr1, array2: arr2)
+print (result16)
+
