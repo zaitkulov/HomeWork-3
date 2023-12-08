@@ -221,3 +221,11 @@ func longWord( string str: String) -> String {
 let result14 = longWord( string: "Длинное слово в строке")
 print (result14)
 
+// 15.Задание: Сокращение строки
+
+func shortString(string str: String, number num: Int) -> String {
+    num > 0 ? String(str.dropLast(num)) + "..." : str
+}
+let result15 = shortString(string: "Нумерация", number: 5)
+print (result15)
+
