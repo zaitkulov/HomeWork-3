@@ -255,3 +255,28 @@ func numberOfWords(string str: String, number num: Int) -> Int {
 let result17 = numberOfWords(string: "Карл у Клары украл корала, а Клара у Карла украла кларнет", number : 4)
 print (result17)
 
+//18.Задние: Угадай число
+
+var randomNumber = Int.random(in: 1...100)
+func guessNumber(_ randomNumber: inout Int) {
+    print("Загадано число от 1 до 100. Введите число, чтобы начать игру:\r")
+    var count = 0
+    game()
+    func game() {
+        let n = String(randomNumber)
+        let userAnswer = readLine()
+        count += 1
+        guard let userAnswer else { return }
+        if userAnswer == n {
+            print("Поздравляю, вы угадали число!")
+        } else if userAnswer < n {
+            print("Загаднное число больше, чем ваше")
+            game()
+        } else if userAnswer > n {
+            print ("Загаданное число меньше, чем ваше")
+            game()
+        }
+    }
+}
+guessNumber(&randomNumber)
+
