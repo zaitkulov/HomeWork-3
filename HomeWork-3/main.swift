@@ -193,3 +193,17 @@ let result12 = removeDublicates(array: arrayDublicateNumbers)
 print (result12)
 
 
+// 13. Задание: Сумма всех числе до N
+
+func sumAllNumbers( number n : Int) -> Int {
+    var result = Int()
+    for i in 1...n {
+        result += i
+    }
+    return result
+}
+
+let result13 = sumAllNumbers(number: 5)
+print (result13)
+
+
