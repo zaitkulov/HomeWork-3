@@ -320,3 +320,14 @@ func WordOnNewLine(_ str: String) {
 }
 WordOnNewLine("Пришел, увидел, победил")
 
+//21.Задание: Функция вывода каждого слова через определенный интервал времени
+
+func delayPrint(string str: String, second time: UInt32) {
+    let words = str.split(separator: " ")
+    for i in words {
+        sleep(time)
+        print(i)
+    }
+}
+delayPrint(string: "1message 2message 3 message", second: 4)
+
