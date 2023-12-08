@@ -160,3 +160,19 @@ let result10 = mergeArray(array1: array1, array2: array2)
 print (result10)
 
 
+// 11.Задание: Подсчет гласных
+
+func countVowels(_ str: String) -> Int {
+    var result = Int()
+    let vowels: [Character] = ["а", "у", "о", "ы", "и", "э", "я", "ю", "е"]
+    for i in str {
+        if vowels.contains(i) {
+            result += 1
+        }
+    }
+    return result
+}
+let result11 = countVowels("артем")
+print (result11)
+
+
