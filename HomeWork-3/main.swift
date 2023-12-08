@@ -140,4 +140,11 @@ func convertDayOfWeek(day: String) -> Int {
 let result8 = convertDayOfWeek(day: "Среда")
 print(result8)
 
+// 9.Задание: Уникальные символы
+
+func uniqueSymbols(string str: String) -> Bool {
+    Set(str).count == str.count
+}
+let result9 = uniqueSymbols(string: "errornil")
+print (result9)
 
