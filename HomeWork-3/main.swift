@@ -176,3 +176,20 @@ let result11 = countVowels("артем")
 print (result11)
 
 
+//12.Задание: Удаление дубликатов из массива
+
+let arrayDublicateNumbers = [1,2,2,1,4,5]
+
+func removeDublicates(array: [Int]) -> [Int] {
+    var result = [Int]()
+    for i in array {
+        if !result.contains(i) {
+            result.append(i)
+        }
+    }
+    return result
+}
+let result12 = removeDublicates(array: arrayDublicateNumbers)
+print (result12)
+
+
