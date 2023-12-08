@@ -148,3 +148,15 @@ func uniqueSymbols(string str: String) -> Bool {
 let result9 = uniqueSymbols(string: "errornil")
 print (result9)
 
+// 10.Задание: Слияние массивов
+
+let array1 = [1,2,3]
+let array2 = [4,5,6]
+
+func mergeArray(array1: [Int], array2: [Int]) -> [Int] {
+    array1 + array2
+}
+let result10 = mergeArray(array1: array1, array2: array2)
+print (result10)
+
+
