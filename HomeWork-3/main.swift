@@ -310,3 +310,13 @@ for char in text {
 }
 print (encode("Shamil"))
        
+//20.Задание: Функция вывода каждого слова строки на новой строке
+
+func WordOnNewLine(_ str: String) {
+    let words = str.split(separator: " ")
+    for i in words {
+        print (i)
+    }
+}
+WordOnNewLine("Пришел, увидел, победил")
+
