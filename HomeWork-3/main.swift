@@ -206,4 +206,18 @@ func sumAllNumbers( number n : Int) -> Int {
 let result13 = sumAllNumbers(number: 5)
 print (result13)
 
+// 14.Задание: Длинное слово в строке
+
+func longWord( string str: String) -> String {
+    let words = str.split(separator: " ")
+    var result = String()
+    for i in words {
+        if i.count > result.count {
+            result = String(i)
+        }
+    }
+    return result
+}
+let result14 = longWord( string: "Длинное слово в строке")
+print (result14)
 
