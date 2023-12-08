@@ -240,3 +240,18 @@ let arr2 = [4,6,9,1,2,3]
 let result16 = sumArrayWithoutDublicates(array1: arr1, array2: arr2)
 print (result16)
 
+//17.Задание: Количество слов заданной длины
+
+func numberOfWords(string str: String, number num: Int) -> Int {
+    var result = Int()
+
+    for i in str.split(separator: " ") {
+        if i.count == num {
+            result += 1
+        }
+    }
+    return result
+}
+let result17 = numberOfWords(string: "Карл у Клары украл корала, а Клара у Карла украла кларнет", number : 4)
+print (result17)
+
