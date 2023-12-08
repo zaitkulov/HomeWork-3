@@ -331,3 +331,15 @@ func delayPrint(string str: String, second time: UInt32) {
 }
 delayPrint(string: "1message 2message 3 message", second: 4)
 
+//22.Задание: Конвертация времени
+
+func convertTime(seconds t: Int) {
+    let seconds = t % 60
+    let minutes = t / 60 % 60
+    let hours = t / 3600
+    print ("\(hours) часов, \(minutes) минут, \(seconds) секунд")
+}
+
+convertTime(seconds: 23456)
+
+
